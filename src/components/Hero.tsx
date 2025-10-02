@@ -68,27 +68,27 @@ const Hero: React.FC = () => {
               <div className="grid grid-cols-2 gap-4 text-sm text-white/85">
                 <div className="flex items-center gap-2">
                   <Pickaxe size={16} />
-                  <span className="font-bold">Trenching</span>
+                  <span className="font-bold text-lg">Trenching</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Link size={16} />
-                  <span className="font-bold">Jointing</span>
+                  <span className="font-bold text-lg">Jointing</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Scissors size={16} />
-                  <span className="font-bold">Splicing</span>
+                  <span className="font-bold text-lg">Splicing</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <TestTube size={16} />
-                  <span className="font-bold">Testing</span>
+                  <span className="font-bold text-lg">Testing</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Wrench size={16} />
-                  <span className="font-bold">Troubleshooting</span>
+                  <span className="font-bold text-lg">Troubleshooting</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Search size={16} />
-                  <span className="font-bold">Inspections</span>
+                  <span className="font-bold text-lg">Inspections</span>
                 </div>
               </div>
               

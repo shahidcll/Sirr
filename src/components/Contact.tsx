@@ -176,6 +176,9 @@ const Contact: React.FC = () => {
           </div>
 
           {/* Network Visualization */}
+          <div className="text-center mb-2">
+            <span className="text-cyan-400 font-bold text-lg">🇮🇳 Pan-India Coverage Network</span>
+          </div>
           <div className="mt-6 p-4 bg-slate-800/30 rounded-lg">
             <h4 className="text-cyan-400 font-semibold mb-3">Our Network Coverage</h4>
             <div className="network-coverage-map relative h-40 bg-slate-900/50 rounded-lg border border-cyan-400/20 overflow-hidden">
@@ -188,38 +191,61 @@ const Contact: React.FC = () => {
                 <div className="node-pulse"></div>
                 <span className="node-label">Mumbai</span>
               </div>
-              <div className="coverage-node bangalore" style={{top: '75%', left: '35%'}}>
+              <div className="coverage-node lucknow" style={{top: '35%', left: '45%'}}>
                 <div className="node-pulse"></div>
-                <span className="node-label">Bangalore</span>
+                <span className="node-label">Lucknow</span>
               </div>
               <div className="coverage-node kolkata" style={{top: '40%', left: '70%'}}>
                 <div className="node-pulse"></div>
                 <span className="node-label">Kolkata</span>
               </div>
-              <div className="coverage-node chennai" style={{top: '80%', left: '45%'}}>
+              <div className="coverage-node sultanpur" style={{top: '40%', left: '50%'}}>
                 <div className="node-pulse"></div>
-                <span className="node-label">Chennai</span>
+                <span className="node-label">Sultanpur</span>
               </div>
               <div className="coverage-node korba" style={{top: '45%', left: '50%'}}>
                 <div className="node-pulse headquarters"></div>
                 <span className="node-label headquarters">Korba HQ</span>
+              </div>
+              <div className="coverage-node koderma" style={{top: '42%', left: '60%'}}>
+                <div className="node-pulse"></div>
+                <span className="node-label">Koderma</span>
+              </div>
+              <div className="coverage-node patna" style={{top: '38%', left: '65%'}}>
+                <div className="node-pulse"></div>
+                <span className="node-label">Patna</span>
+              </div>
+              <div className="coverage-node bhagalpur" style={{top: '40%', left: '72%'}}>
+                <div className="node-pulse"></div>
+                <span className="node-label">Bhagalpur</span>
+              </div>
+              <div className="coverage-node raipur" style={{top: '55%', left: '48%'}}>
+                <div className="node-pulse"></div>
+                <span className="node-label">Raipur</span>
+              </div>
+              <div className="coverage-node anuppur" style={{top: '50%', left: '52%'}}>
+                <div className="node-pulse"></div>
+                <span className="node-label">Anuppur</span>
+              </div>
+              <div className="coverage-node ajmer" style={{top: '35%', left: '25%'}}>
+                <div className="node-pulse"></div>
+                <span className="node-label">Ajmer</span>
               </div>
               
               {/* Connection Lines */}
               <div className="coverage-line" style={{top: '30%', left: '30%', width: '180px', transform: 'rotate(25deg)'}}></div>
               <div className="coverage-line" style={{top: '55%', left: '20%', width: '200px', transform: 'rotate(-15deg)'}}></div>
               <div className="coverage-line" style={{top: '45%', left: '50%', width: '120px', transform: 'rotate(45deg)'}}></div>
-              <div className="coverage-line" style={{top: '65%', left: '35%', width: '100px', transform: 'rotate(15deg)'}}></div>
+              <div className="coverage-line" style={{top: '40%', left: '45%', width: '100px', transform: 'rotate(15deg)'}}></div>
+              <div className="coverage-line" style={{top: '42%', left: '60%', width: '80px', transform: 'rotate(-30deg)'}}></div>
+              <div className="coverage-line" style={{top: '50%', left: '48%', width: '90px', transform: 'rotate(20deg)'}}></div>
               
               {/* Coverage Areas */}
               <div className="coverage-area north" style={{top: '10%', left: '25%', width: '30%', height: '25%'}}></div>
               <div className="coverage-area west" style={{top: '45%', left: '5%', width: '25%', height: '30%'}}></div>
-              <div className="coverage-area south" style={{top: '65%', left: '30%', width: '35%', height: '25%'}}></div>
+              <div className="coverage-area central" style={{top: '40%', left: '40%', width: '35%', height: '25%'}}></div>
               <div className="coverage-area east" style={{top: '35%', left: '65%', width: '25%', height: '25%'}}></div>
               
-              <div className="absolute bottom-2 left-2 text-sm text-cyan-300 font-semibold">
-                🇮🇳 Pan-India Coverage Network
-              </div>
               <div className="absolute bottom-2 right-2 text-xs text-white/70">
                 Active Installations Nationwide
               </div>

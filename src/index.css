@@ -719,11 +719,11 @@ select.form-input:hover {
   top: 20px;
   width: 60px;
   height: 8px;
-  background: linear-gradient(90deg, #666 0%, #999 50%, #666 100%);
+  background: linear-gradient(90deg, var(--accent) 0%, #00D0FF 50%, var(--accent) 100%);
   border-radius: 4px;
   transform-origin: left center;
   animation: excavatorDig 8s ease-in-out infinite;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  box-shadow: 0 2px 8px rgba(0,208,255,0.4);
 }
 
 .excavator-arm::after {
@@ -733,7 +733,7 @@ select.form-input:hover {
   top: -4px;
   width: 16px;
   height: 16px;
-  background: #888;
+  background: var(--accent);
   border-radius: 2px;
   box-shadow: 0 0 6px rgba(0,208,255,0.3);
 }
@@ -760,10 +760,10 @@ select.form-input:hover {
   right: 15%;
   top: 50px;
   height: 4px;
-  background: linear-gradient(90deg, transparent 0%, #333 20%, #333 80%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, rgba(0,208,255,0.6) 20%, rgba(0,208,255,0.6) 80%, transparent 100%);
   border-radius: 2px;
   animation: trenchProgress 8s ease-in-out infinite;
-  box-shadow: inset 0 2px 4px rgba(0,0,0,0.6);
+  box-shadow: inset 0 2px 4px rgba(0,208,255,0.3);
 }
 
 @keyframes trenchProgress {
@@ -906,9 +906,10 @@ select.form-input:hover {
 }
 
 .op-dot.trenching {
-  background: #888;
-  border: 1px solid #aaa;
+  background: var(--accent);
+  border: 1px solid #00D0FF;
   animation: trenchingPulse 8s ease-in-out infinite;
+  box-shadow: 0 0 8px rgba(0,208,255,0.6);
 }
 
 .op-dot.laying {
@@ -918,8 +919,8 @@ select.form-input:hover {
 }
 
 .op-dot.testing {
-  background: #66f;
-  box-shadow: 0 0 8px rgba(102,255,102,0.6);
+  background: var(--accent);
+  box-shadow: 0 0 8px rgba(0,208,255,0.6);
   animation: testingPulse 8s ease-in-out infinite;
 }
 
