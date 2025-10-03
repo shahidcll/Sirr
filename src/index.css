@@ -44,6 +44,34 @@ html, body {
 .network-coverage-map {
   position: relative;
   background: linear-gradient(135deg, #0a1a2a 0%, #1a2a3a 50%, #0a1a2a 100%);
+  transition: all 0.5s ease;
+}
+
+.network-coverage-map:hover {
+  background: linear-gradient(135deg, #0a1a2a 0%, #1a2a3a 30%, #2a3a4a 70%, #0a1a2a 100%);
+  box-shadow: 0 0 30px rgba(0, 208, 255, 0.2);
+}
+
+.network-coverage-map:hover .node-pulse {
+  animation-duration: 1.5s;
+  transform: scale(1.1);
+}
+
+.network-coverage-map:hover .node-label {
+  font-size: 10px;
+  font-weight: 700;
+  text-shadow: 0 0 12px rgba(0,208,255,0.8);
+}
+
+.network-coverage-map:hover .coverage-line {
+  opacity: 1;
+  height: 3px;
+  animation-duration: 2s;
+}
+
+.network-coverage-map:hover .coverage-area {
+  opacity: 0.8;
+  animation-duration: 3s;
 }
 
 .coverage-node {

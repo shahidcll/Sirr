@@ -67,6 +67,13 @@ const AnimatedCanvas: React.FC = () => {
       if (controls.palette === 'yellow') hue = 60 + Math.sin(t * 0.001 + this.offset) * 10;
       if (controls.palette === 'red') hue = 0 + Math.sin(t * 0.001 + this.offset) * 15;
       
+      if (controls.palette === 'shuffle') {
+        // Random color shuffle - each streak gets a different base color that changes over time
+        const colorOptions = [195, 260, 120, 60, 0, 280, 320]; // cyan, purple, green, yellow, red, magenta, violet
+        const colorIndex = Math.floor((t * 0.0005 + this.offset) * colorOptions.length) % colorOptions.length;
+        hue = colorOptions[colorIndex] + Math.sin(t * 0.002 + this.offset) * 20;
+      }
+      
       if (controls.palette === 'rainbow') {
         const grad = ctx.createLinearGradient(this.x, this.y, this.x, this.y + this.len);
         for (let k = 0; k < 6; k++) {

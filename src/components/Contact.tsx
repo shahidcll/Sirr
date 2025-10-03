@@ -160,7 +160,7 @@ const Contact: React.FC = () => {
               <Mail className="text-cyan-400 mt-1 flex-shrink-0" size={20} />
               <div>
                 <div className="font-semibold text-white mb-1">Email:</div>
-                <div className="text-white/90">SIRcorp.pvt.ltd@gmail.com</div>
+                <div className="text-white/90">sircorp.pvtltd@gmail.com</div>
               </div>
             </div>
             
@@ -181,73 +181,77 @@ const Contact: React.FC = () => {
           </div>
           <div className="mt-6 p-4 bg-slate-800/30 rounded-lg">
             <h4 className="text-cyan-400 font-semibold mb-3">Our Network Coverage</h4>
-            <div className="network-coverage-map relative h-40 bg-slate-900/50 rounded-lg border border-cyan-400/20 overflow-hidden">
+            <div className="network-coverage-map relative h-64 bg-slate-900/50 rounded-lg border border-cyan-400/20 overflow-hidden hover:h-80 transition-all duration-500 hover:scale-105 cursor-pointer group">
               {/* Major Cities */}
-              <div className="coverage-node delhi" style={{top: '25%', left: '30%'}}>
+              <div className="coverage-node delhi" style={{top: '20%', left: '28%'}}>
                 <div className="node-pulse"></div>
                 <span className="node-label">Delhi</span>
               </div>
-              <div className="coverage-node mumbai" style={{top: '60%', left: '15%'}}>
+              <div className="coverage-node mumbai" style={{top: '55%', left: '12%'}}>
                 <div className="node-pulse"></div>
                 <span className="node-label">Mumbai</span>
               </div>
-              <div className="coverage-node lucknow" style={{top: '35%', left: '45%'}}>
+              <div className="coverage-node lucknow" style={{top: '30%', left: '42%'}}>
                 <div className="node-pulse"></div>
                 <span className="node-label">Lucknow</span>
               </div>
-              <div className="coverage-node kolkata" style={{top: '40%', left: '70%'}}>
+              <div className="coverage-node kolkata" style={{top: '35%', left: '68%'}}>
                 <div className="node-pulse"></div>
                 <span className="node-label">Kolkata</span>
               </div>
-              <div className="coverage-node sultanpur" style={{top: '40%', left: '50%'}}>
+              <div className="coverage-node sultanpur" style={{top: '35%', left: '48%'}}>
                 <div className="node-pulse"></div>
                 <span className="node-label">Sultanpur</span>
               </div>
-              <div className="coverage-node korba" style={{top: '45%', left: '50%'}}>
+              <div className="coverage-node korba" style={{top: '40%', left: '48%'}}>
                 <div className="node-pulse headquarters"></div>
                 <span className="node-label headquarters">Korba HQ</span>
               </div>
-              <div className="coverage-node koderma" style={{top: '42%', left: '60%'}}>
+              <div className="coverage-node koderma" style={{top: '37%', left: '58%'}}>
                 <div className="node-pulse"></div>
                 <span className="node-label">Koderma</span>
               </div>
-              <div className="coverage-node patna" style={{top: '38%', left: '65%'}}>
+              <div className="coverage-node patna" style={{top: '33%', left: '62%'}}>
                 <div className="node-pulse"></div>
                 <span className="node-label">Patna</span>
               </div>
-              <div className="coverage-node bhagalpur" style={{top: '40%', left: '72%'}}>
+              <div className="coverage-node bhagalpur" style={{top: '35%', left: '70%'}}>
                 <div className="node-pulse"></div>
                 <span className="node-label">Bhagalpur</span>
               </div>
-              <div className="coverage-node raipur" style={{top: '55%', left: '48%'}}>
+              <div className="coverage-node raipur" style={{top: '50%', left: '46%'}}>
                 <div className="node-pulse"></div>
                 <span className="node-label">Raipur</span>
               </div>
-              <div className="coverage-node anuppur" style={{top: '50%', left: '52%'}}>
+              <div className="coverage-node anuppur" style={{top: '45%', left: '50%'}}>
                 <div className="node-pulse"></div>
                 <span className="node-label">Anuppur</span>
               </div>
-              <div className="coverage-node ajmer" style={{top: '35%', left: '25%'}}>
+              <div className="coverage-node ajmer" style={{top: '30%', left: '22%'}}>
                 <div className="node-pulse"></div>
                 <span className="node-label">Ajmer</span>
               </div>
               
               {/* Connection Lines */}
-              <div className="coverage-line" style={{top: '30%', left: '30%', width: '180px', transform: 'rotate(25deg)'}}></div>
-              <div className="coverage-line" style={{top: '55%', left: '20%', width: '200px', transform: 'rotate(-15deg)'}}></div>
-              <div className="coverage-line" style={{top: '45%', left: '50%', width: '120px', transform: 'rotate(45deg)'}}></div>
-              <div className="coverage-line" style={{top: '40%', left: '45%', width: '100px', transform: 'rotate(15deg)'}}></div>
-              <div className="coverage-line" style={{top: '42%', left: '60%', width: '80px', transform: 'rotate(-30deg)'}}></div>
-              <div className="coverage-line" style={{top: '50%', left: '48%', width: '90px', transform: 'rotate(20deg)'}}></div>
+              <div className="coverage-line" style={{top: '25%', left: '28%', width: '160px', transform: 'rotate(25deg)'}}></div>
+              <div className="coverage-line" style={{top: '50%', left: '15%', width: '180px', transform: 'rotate(-15deg)'}}></div>
+              <div className="coverage-line" style={{top: '40%', left: '48%', width: '100px', transform: 'rotate(45deg)'}}></div>
+              <div className="coverage-line" style={{top: '35%', left: '42%', width: '80px', transform: 'rotate(15deg)'}}></div>
+              <div className="coverage-line" style={{top: '37%', left: '58%', width: '70px', transform: 'rotate(-30deg)'}}></div>
+              <div className="coverage-line" style={{top: '45%', left: '46%', width: '80px', transform: 'rotate(20deg)'}}></div>
               
               {/* Coverage Areas */}
-              <div className="coverage-area north" style={{top: '10%', left: '25%', width: '30%', height: '25%'}}></div>
-              <div className="coverage-area west" style={{top: '45%', left: '5%', width: '25%', height: '30%'}}></div>
-              <div className="coverage-area central" style={{top: '40%', left: '40%', width: '35%', height: '25%'}}></div>
-              <div className="coverage-area east" style={{top: '35%', left: '65%', width: '25%', height: '25%'}}></div>
+              <div className="coverage-area north" style={{top: '5%', left: '20%', width: '35%', height: '30%'}}></div>
+              <div className="coverage-area west" style={{top: '40%', left: '2%', width: '30%', height: '35%'}}></div>
+              <div className="coverage-area central" style={{top: '35%', left: '35%', width: '40%', height: '30%'}}></div>
+              <div className="coverage-area east" style={{top: '30%', left: '60%', width: '30%', height: '30%'}}></div>
               
-              <div className="absolute bottom-2 right-2 text-xs text-white/70">
+              <div className="absolute bottom-2 right-2 text-xs text-white/70 group-hover:text-white/90 transition-colors">
                 Active Installations Nationwide
+              </div>
+              
+              <div className="absolute top-2 left-2 text-xs text-cyan-400/70 group-hover:text-cyan-400 transition-colors">
+                Hover to expand view
               </div>
             </div>
           </div>

@@ -144,6 +144,7 @@ const ControlsSidebar: React.FC = () => {
               <option value="green">Green Fiber</option>
               <option value="yellow">Yellow Fiber</option>
               <option value="red">Red Fiber</option>
+              <option value="shuffle">Color Shuffle</option>
               <option value="rainbow">Rainbow Spectrum</option>
               <option value="industrial">Industrial Blue</option>
             </select>
