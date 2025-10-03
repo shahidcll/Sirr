@@ -181,7 +181,7 @@ const Contact: React.FC = () => {
           </div>
           <div className="mt-6 p-4 bg-slate-800/30 rounded-lg">
             <h4 className="text-cyan-400 font-semibold mb-3">Our Network Coverage</h4>
-            <div className="network-coverage-map relative h-64 bg-slate-900/50 rounded-lg border border-cyan-400/20 overflow-hidden hover:h-80 transition-all duration-500 hover:scale-105 cursor-pointer group">
+            <div className="network-coverage-map relative h-72 bg-slate-900/50 rounded-lg border border-cyan-400/20 overflow-hidden hover:h-96 transition-all duration-500 hover:scale-110 cursor-pointer group">
               {/* Major Cities */}
               <div className="coverage-node delhi" style={{top: '20%', left: '28%'}}>
                 <div className="node-pulse"></div>
@@ -204,7 +204,7 @@ const Contact: React.FC = () => {
                 <span className="node-label">Sultanpur</span>
               </div>
               <div className="coverage-node korba" style={{top: '40%', left: '48%'}}>
-                <div className="node-pulse headquarters"></div>
+                <div className="node-pulse headquarters-main"></div>
                 <span className="node-label headquarters">Korba HQ</span>
               </div>
               <div className="coverage-node koderma" style={{top: '37%', left: '58%'}}>

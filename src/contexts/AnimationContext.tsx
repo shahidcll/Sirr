@@ -19,7 +19,7 @@ const defaultControls: AnimationControls = {
   density: 20,
   speedFactor: 1.0,
   brightness: 65,
-  palette: 'cyan'
+  palette: 'shuffle'
 };
 
 export const AnimationContext = createContext<AnimationContextType>({
